@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { QuoteFormComponent} from './quote-form/quote-form.component';
 import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
 
@@ -13,13 +14,13 @@ import { DateCountPipe } from './date-count.pipe';
     AppComponent,
     QuoteComponent,
     QuoteDetailsComponent,
+    QuoteFormComponent,
     StrikethroughDirective,
-    DateCountPipe,
-    QuoteFormComponent
+    DateCountPipe
+
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     AppRoutingModule
   ],
   providers: [],
