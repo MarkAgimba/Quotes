@@ -1,26 +1,39 @@
-# IPQuotes
+# M.M.A Quote App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
-## Development server
+## SETUP/INSTALLATION.
+To work With the M.M.A Quote App {follow the below instructions for set up.}
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+You will need Internet connection.
 
-## Code scaffolding
+You will also need a Webpage URL to load in URL's:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To get to use M.M.A Quote App fist you need to get to the Quotes-Angular repository.
 
-## Build
+Link:-> https://github.com/zecollokaris/Quotes-Angular
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+From there you can access Quotes.
 
-## Running unit tests
+Clone the project.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Once you done with cloning and project is on your device.
 
-## Running end-to-end tests
+get into project folder (cd into project).
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+On your bash terminal Run the command:-
+
+ng serve.
+Open your prefered web browser and load it on local host:
+
+http://localhost:4200/
+This will load for you Quotes as long as your requirements are satisfied.
+## Technologies Used
+1.Angular version 7(Framework)
+2.Javascript
+3.Typescript
+4.CSS
+5.HTML
 
 ## Further help
 
