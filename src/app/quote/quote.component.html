@@ -1,10 +1,10 @@
-<body background="">
+<body class="bground" background="http://sfwallpaper.com/images/backgrounds-white-2.jpg">
 
 
 <h1 class="quotesheader"><i><u>M.M.A Quote App</u></i></h1>
 <hr>
 
-<div style="margin-left: 15%;" class="content">
+<div class="content">
   <div class="row">
     <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
   </div>
@@ -20,5 +20,5 @@
       </div>
   </div>
 </div>
-<p *ngIf='Quotes.length> 5'>© 2019 M.M.A</p>
+<p class="pp" *ngIf='Quotes.length> 5'>© 2019 M.M.A</p>
 </body>

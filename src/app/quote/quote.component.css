@@ -1,0 +1,26 @@
+.content {
+  text-align: inherit;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  color: black;
+  text-align: inherit;
+}
+.pp {
+  text-align: center;
+  font-style: oblique;
+  font-size: 20px;
+  color: black;
+}
+h1 {
+  color: Red;
+  font-family: cursive;
+  font-style: normal;
+  text-align: center;
+  ;
+}
+.bground {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: difference;
+}
