@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
+## Description
+The M.M.A Quote application has been created for the purpose of allowing users to add/delete Quotes which they can further view and either like or dislike already submitted Quotes.
+
 ## SETUP/INSTALLATION.
 To work With the M.M.A Quote App {follow the below instructions for set up.}
 
@@ -37,9 +40,11 @@ This will load for you Quotes as long as your requirements are satisfied.
 4.CSS
 5.HTML
 
+##Support and Contact
+-Github: MarkAgimba
+
 ## License
 The app is licensed by MIT.
-
 MIT (c) 2019
 
 ## Further help
