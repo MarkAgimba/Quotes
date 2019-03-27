@@ -9,9 +9,9 @@ You will need Internet connection.
 
 You will also need a Webpage URL to load in URL's:
 
-To get to use M.M.A Quote App fist you need to get to the Quotes-Angular repository.
+To get to use M.M.A Quote App fist you need to get to the Quotes repository.
 
-Link:-> https://github.com/zecollokaris/Quotes-Angular
+Link:-> https://markagimba.github.io/Quotes/.
 
 From there you can access Quotes.
 
@@ -28,12 +28,19 @@ Open your prefered web browser and load it on local host:
 
 http://localhost:4200/
 This will load for you Quotes as long as your requirements are satisfied.
+
+
 ## Technologies Used
 1.Angular version 7(Framework)
 2.Javascript
 3.Typescript
 4.CSS
 5.HTML
+
+## License
+The app is licensed by MIT.
+
+MIT (c) 2019
 
 ## Further help
 
