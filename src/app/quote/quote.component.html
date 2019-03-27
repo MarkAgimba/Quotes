@@ -1,3 +1,6 @@
+<body>
+
+
 <h1 class="quotesheader">Quotes </h1>
 <hr>
 
@@ -10,7 +13,7 @@
       <h3 style="font-family: 'Jura', sans-serif;" id="{{i}}" appStrikethrough><strong>{{quote.name}}</strong> submitted on: {{quote.completeDate|date|uppercase}}</h3>
 
       <!-- Toggle Button -->
-      <div style="width: 130px;">  <a href="#" class="btn btn-sm animated-button thar-one" (click)='toogleDetails(i)'>TOOGLE</a> </div>
+      <div style="width: 130px;">  <a href="#" class="btn btn-sm animated-button thar-one" (click)='toggleDetails(i)'>QUOTE</a> </div>
 
       <div class="row" *ngIf="quote.showDescription">
         <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
@@ -18,3 +21,4 @@
   </div>
 </div>
 <p *ngIf='Quotes.length> 5'>© 2019 M.M.A</p>
+</body>
