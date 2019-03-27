@@ -1,6 +1,6 @@
-<h2 style="font-family: 'Verdana', sans-serif;">{{quote.description}}</h2>
+<p class="text-center" style="font-family: 'Verdana', sans-serif;">{{quote.description}}</p>
 
-<h3 style="font-family: 'Vivaldi', cursive;">This Quote was submitted {{quote.completeDate|dateCount}} days ago</h3>
+<p class="text-center" style="font-family: 'Vivaldi', cursive;">This Quote was submitted {{quote.completeDate|dateCount}} days ago</p>
 
 <button class="btn btn-info" type="submit" (click)='voteUp()' >
   <span class="glyphicon glyphicon-thumbs-u" aria-hidden="true"></span>
@@ -17,5 +17,5 @@
 
 <!-- Delete Button to delete quote -->
 <div style="width: 20%;">
-  <a href="#" class="btn btn-sm animated-button victoria-one" (click)='quoteDelete(true)'>Delete Quote</a>
+  <a href="#" class="text-right btn btn success" color="red" (click)='quoteDelete(true)'>DELETE QUOTE</a>
 </div>

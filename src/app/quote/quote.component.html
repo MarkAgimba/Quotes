@@ -1,21 +1,24 @@
-<body class="bground" background="http://sfwallpaper.com/images/backgrounds-white-2.jpg">
-<h1 class="quotesheader"><i><u>M.M.A Quote App</u></i></h1>
-<hr>
-<div class="content">
-  <div class="row">
-    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-  </div>
+<div class="container">
+  <div class="container-fluid text-left">
 
-  <div *ngFor='let quote of Quotes;let i = index'>
-      <h3 style="font-family: 'Jura', sans-serif;" id="{{i}}" appStrikethrough><strong>{{quote.name}}</strong> submitted on: {{quote.completeDate|date|uppercase}}</h3>
-
-      <!-- Toggle Button -->
-      <div style="width: 130px;">  <a href="#" class="btn btn-sm animated-button thar-one" (click)='toggleDetails(i)'>QUOTE</a> </div>
-
-      <div class="row" *ngIf="quote.showDescription">
-        <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+    <h1 class="quotesheader"><i><u>M.M.A Quote App</u></i></h1>
+    <hr>
+    <div class="">
+      <div class="row">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
       </div>
+
+      <div *ngFor='let quote of Quotes;let i = index'>
+        <p style="font-family: 'serif', sans-serif;" id="{{i}}" appStrikethrough><strong>{{quote.name}}</strong> submitted on: {{quote.completeDate|date|uppercase}}</p>
+
+        <!-- Toggle Button -->
+        <div style="width: 5px;"> <a href="#" class="btn btn-md success" (click)='toggleDetails(i)'>SHOW-QUOTE</a> </div>
+
+        <div class="" *ngIf="quote.showDescription">
+          <app-quote-details class="text-left" *ngIf="quote.showDescription" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+        </div>
+      </div>
+    </div>
+    <p class="pp" *ngIf='Quotes.length> 5'>© 2019 M.M.A</p>
   </div>
 </div>
-<p class="pp" *ngIf='Quotes.length> 5'>© 2019 M.M.A</p>
-</body>
