@@ -20,6 +20,13 @@ export class QuoteComponent implements OnInit {
     this.Quotes[index].showDescription = !this.Quotes[index].showDescription;
   }
 
+  addNewQuote(quote){
+    let quotelength = this.Quotes.length;
+    quote.id=quotelength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.Quotes.push(quote)
+  }
+
   deleteQuote(isComplete, index) {
     if (isComplete) {
       this.Quotes.splice(index, 1);

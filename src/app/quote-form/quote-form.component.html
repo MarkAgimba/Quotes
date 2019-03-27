@@ -7,7 +7,6 @@
         <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
 
         <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-          <p> Name is required</p>
 
         </div>
 
@@ -17,7 +16,6 @@
         <label for="description">Description</label>
         <textarea class="form-control" id="description" rows="4"  [(ngModel)]="newGoal.description" name="description" #description="ngModel" required></textarea>
         <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
-          <p> Description is Required </p>
 
         </div>
 
@@ -27,7 +25,6 @@
       <div class="form-group">
         <label for="complete">Submit</label>
         <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
-        <p> Submit Date is Required</p>
 
       </div>
       <button type="Submit" class="btn btn-success btn-lg">Add Quote</button>
